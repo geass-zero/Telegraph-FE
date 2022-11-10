@@ -1,0 +1,143 @@
+@import './../../variables.scss';
+
+footer {
+  background-color: $dark;
+  padding-top: 50px;
+  padding-bottom: 102px;
+
+  .content_wrap {
+    color: $white;
+
+    .text_wrap {
+      .margin_ready {
+        margin-right: 22px;
+      }
+
+      button {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 21px;
+        letter-spacing: -0.231818px;
+      }
+    }
+
+    .line {
+      &.margin {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .links_columns_wrap {
+      width: 100%;
+
+      & > div {
+        width: 100%;
+      }
+
+      .resources {
+        .text_color {
+          color: $grey-x2;
+        }
+
+        .item {
+          div {
+            margin-top: 22px;
+          }
+
+          .footer_link {
+            text-decoration: none !important;
+            color: $grey-x1;
+          }
+        }
+      }
+
+      .about {
+        .text_color {
+          color: $grey-x2;
+        }
+
+        .item {
+          div {
+            margin-top: 22px;
+          }
+
+          .footer_link {
+            text-decoration: none !important;
+            color: $grey-x1;
+          }
+        }
+      }
+
+      .help {
+        .text_color {
+          color: $grey-x2;
+        }
+
+        .item {
+          div {
+            margin-top: 22px;
+          }
+
+          .footer_link {
+            text-decoration: none !important;
+            color: $grey-x1;
+          }
+        }
+      }
+    }
+
+    .developer {
+      margin-right: 30%;
+
+      .item {
+        margin-bottom: 10px;
+      }
+    }
+
+    .copy_right {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: -0.204545px;
+      margin-top: 114px;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-xs) {
+  footer {
+    padding-bottom: 40px;
+
+    .content_wrap {
+      .basic_details {
+        .ready_wrap {
+          flex-direction: column;
+          align-items: flex-end;
+
+          .margin_ready {
+            margin-right: 0;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .developer {
+        display: none;
+      }
+
+      .links_columns_wrap {
+        width: 100%;
+
+        & > div {
+          width: 100%;
+          flex: 1;
+        }
+      }
+
+      .copy_right {
+        margin-top: 40px;
+      }
+    }
+  }
+}

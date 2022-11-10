@@ -1,0 +1,164 @@
+@import './../../variables.scss';
+@import './hamburger.scss';
+
+body {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $mainnav-height;
+    z-index: 999;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: height 0.4s, box-shadow 0.8s;
+    box-shadow: 0px 0px 15px rgba(51, 51, 51, 0);
+
+    &.scrolled_header {
+      height: 60px;
+      box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.253);
+    }
+
+    .content_wrap {
+      max-width: 1440px;
+      @include flex-row();
+      height: 100%;
+      justify-content: space-between;
+
+      .logo {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        text-decoration: none !important;
+        color: $blue;
+      }
+
+      .links_wrap {
+        @include flex-row();
+
+        .main_link {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 22px;
+          color: $grey;
+          text-decoration: none !important;
+          margin: 0 20px;
+          transition: all 0.3s;
+
+          &:hover {
+            color: $blue;
+          }
+
+          &.active {
+            font-weight: 600;
+            color: $blue;
+          }
+        }
+      }
+
+      .buttons_wrap {
+        @include flex-row();
+        justify-content: flex-end;
+
+        svg {
+          margin-right: 10px;
+        }
+
+        button {
+          margin-left: 30px;
+        }
+
+        .dropdown {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  body {
+    header {
+      padding: 0 20px;
+
+      &::before {
+        @include pseudo-abs();
+        background-color: $white;
+        height: 100vh;
+        transition: opacity 0.2s;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .content_wrap {
+        padding: 0;
+        position: relative;
+
+        .links_wrap,
+        .buttons_wrap {
+          display: none;
+          max-height: 0vh;
+          overflow: hidden;
+          transition: max-height 0.3s;
+        }
+
+        .links_wrap {
+          position: absolute;
+          left: 0;
+          top: 100%;
+          width: 100%;
+          flex-direction: column;
+          animation: slideTtB 0.4s 1;
+
+          .main_link {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+          }
+        }
+
+        .buttons_wrap {
+          display: none;
+          position: fixed;
+          left: 0;
+          top: calc(100vh - 210px);
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          animation: slideTtB 0.8s 1;
+
+          .dropdown {
+            margin-bottom: 15px;
+          }
+
+          button {
+            margin-left: 0;
+          }
+        }
+
+        .hamburger {
+          display: block;
+        }
+      }
+
+      &.mob_nav_open {
+        &:before {
+          opacity: 1;
+          pointer-events: all;
+        }
+
+        .content_wrap {
+          .links_wrap,
+          .buttons_wrap {
+            display: flex;
+            max-height: 100vh;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Send Message",
+    "code": "function sendMessage() public returns ( bool ) {\n             //send bridge message\n\n            address[] memory addresses =  new address[](1);\n            uint256[] memory integers = new uint256[](1);\n            string[] memory strings = new string[](1);\n            bool[] memory bools = new string[](1);\n\n            PortContract(bridgePort).outboundMessage{value: 1}(\n                address(this),\n                0x0000000000000000000000000000000000000000,\n                addresses, integers, \n                strings, bools,\n                \"ETH-Rinkeby\"\n            );\n}"
+  },
+  {
+    "id": 2,
+    "title": "Receive Message",
+    "code": "function recieveMessage() public returns ( bool ) {\n             //send bridge message\n\n            address[] memory addresses =  new address[](1);\n            uint256[] memory integers = new uint256[](1);\n            string[] memory strings = new string[](1);\n            bool[] memory bools = new string[](1);\n\n            PortContract(bridgePort).outboundMessage{value: 1}(\n                address(this),\n                0x0000000000000000000000000000000000000000,\n                addresses, integers, \n                strings, bools,\n                \"ETH-Rinkeby\"\n            );\n}"
+  },
+  {
+    "id": 3,
+    "title": "Create External Wallet",
+    "code": "function createExternalWallet() public returns ( bool ) {\n             //send bridge message\n\n            address[] memory addresses =  new address[](1);\n            uint256[] memory integers = new uint256[](1);\n            string[] memory strings = new string[](1);\n            bool[] memory bools = new string[](1);\n\n            PortContract(bridgePort).outboundMessage{value: 1}(\n                address(this),\n                0x0000000000000000000000000000000000000000,\n                addresses, integers, \n                strings, bools,\n                \"ETH-Rinkeby\"\n            );\n}"
+  },
+  {
+    "id": 4,
+    "title": "Create Wallet Listener",
+    "code": "function createWalletListener() public returns ( bool ) {\n             //send bridge message\n\n            address[] memory addresses =  new address[](1);\n            uint256[] memory integers = new uint256[](1);\n            string[] memory strings = new string[](1);\n            bool[] memory bools = new string[](1);\n\n            PortContract(bridgePort).outboundMessage{value: 1}(\n                address(this),\n                0x0000000000000000000000000000000000000000,\n                addresses, integers, \n                strings, bools,\n                \"ETH-Rinkeby\"\n            );\n}"
+  }
+]

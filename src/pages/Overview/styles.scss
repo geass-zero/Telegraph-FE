@@ -1,0 +1,20 @@
+@import './../../variables.scss';
+
+.content_wrap {
+  &.over_view {
+    margin-bottom: 80px;
+
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 23px;
+      text-transform: capitalize;
+      width: 100%;
+      max-width: 680px;
+    }
+
+    .content_cards {
+      @include flex-column();
+    }
+  }
+}

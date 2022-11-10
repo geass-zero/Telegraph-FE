@@ -1,0 +1,36 @@
+@import './../../variables.scss';
+
+.input_box {
+  position: relative;
+
+  &.dropdown {
+    @include flex-row();
+    padding: 3px 0;
+
+    span[class*='indicatorSeparator'] {
+      display: none;
+    }
+
+    div {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      border: transparent;
+
+      &[class*='Input'] {
+        color: #000;
+      }
+
+      &[class*='ValueContainer'] {
+        padding-right: 0;
+      }
+
+      &[class*='control'] {
+        div[class*='indicatorContainer'] {
+          padding: 0px;
+        }
+      }
+    }
+  }
+}

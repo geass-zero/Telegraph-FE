@@ -1,0 +1,54 @@
+@import './../../variables.scss';
+
+.team_partners {
+  .banner {
+    margin-bottom: 100px;
+    width: 100%;
+    background: #fafcff;
+    animation: backgroundFadeIn 1s 1;
+
+    @keyframes backgroundFadeIn {
+      from {
+        background-color: transparent;
+      }
+      to {
+        background-color: #fafcff;
+      }
+    }
+
+    .content_wrap {
+      @include flex-column();
+      min-height: 380px;
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        width: 100%;
+        max-width: 619px;
+      }
+    }
+  }
+
+  .page_contents {
+    .content_wrap {
+      h1 {
+        margin-bottom: 57px;
+      }
+      .connections_wrap {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-xs) {
+  .team_partners {
+    .content_wrap {
+      .connections_wrap {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
