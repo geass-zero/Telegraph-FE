@@ -2,8 +2,7 @@
 
 .content_wrap {
   &.ecosystem_wrap {
-    margin-bottom: 40px;
-    float: left;
+    margin-bottom: 80px;
     width: 100%;
 
     .ecosystems_items_wrap {
@@ -11,7 +10,6 @@
       flex-wrap: wrap;
       gap: 60px;
       justify-content: flex-start;
-      float: left;
     }
   }
 }
