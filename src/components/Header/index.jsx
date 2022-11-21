@@ -62,15 +62,23 @@ const Header = () => {
             link={AppRoute.TEAM}
             title='Team & Partners'
           />
-          <BannerLink
-            onClick={() => setMobMenu(false)}
-            link={AppRoute.DOCUMENTATION}
+          <a
             title='Documentation'
-          />
+            onClick={() => setMobMenu(false)}
+            className={`main_link`}
+            target='_blank'
+            href={AppRoute.DOCUMENTATION}
+            rel='noreferrer'>
+            Documentation
+          </a>
         </div>
 
         <div className='buttons_wrap'>
-          <LanguageDropDown options={options} placeholder='EN' />
+          <LanguageDropDown
+            options={options}
+            placeholder='EN'
+            isSearchable={false}
+          />
           <button>Start Now</button>
         </div>
 

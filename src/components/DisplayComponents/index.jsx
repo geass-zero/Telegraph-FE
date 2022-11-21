@@ -1,5 +1,6 @@
 import './styles.scss';
 import { ReactComponent as Linkicon } from './../../assets/svg/link.svg';
+import { ReactComponent as EcoSystemIcon } from './../../assets/svg/EcosystemDummy.svg';
 
 const ContentCard = ({ title, icon, sub_title, para, index }) => {
   return (
@@ -49,12 +50,37 @@ const PlanCard = ({ isRight, title, description, icon }) => {
   );
 };
 
-const SocialCard = ({ color, icon, text }) => {
+const EcosystemCard = ({ title, icon }) => {
+  return (
+    <div
+      className={`ecosystem_card`}
+      data-aos='fade-up'
+      data-aos-offset='0'
+      data-aos-duration='500'>
+      <div className='text_wrap'>
+        <img src={icon} alt='icon' />
+        <div className='title'>{title}</div>
+      </div>
+      <div className='links_wrap'>
+        <div className='link'>
+          <EcoSystemIcon />
+          Docs
+        </div>
+        <div className='link'>
+          <EcoSystemIcon />
+          Networks
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const SocialCard = ({ color, icon, text, index }) => {
   return (
     <div
       data-aos='fade-up'
       data-aos-offset='0'
-      data-aos-duration='400'
+      data-aos-duration={index * 100 + 300}
       className={`social_card flex_box space_between align_items ${
         color ? color : 'black'
       }`}>
@@ -69,4 +95,4 @@ const SocialCard = ({ color, icon, text }) => {
   );
 };
 
-export { ContentCard, ConnectionCard, PlanCard, SocialCard };
+export { ContentCard, ConnectionCard, PlanCard, SocialCard, EcosystemCard };

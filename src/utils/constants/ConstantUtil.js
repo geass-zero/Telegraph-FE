@@ -5,5 +5,5 @@ export const AppRoute = {
   USECASE: '/usecase',
   ECOSYSTEM: '/ecosystem',
   TEAM: '/team',
-  DOCUMENTATION: '/documentation',
+  DOCUMENTATION: 'https://telegraph-1.gitbook.io/',
 };

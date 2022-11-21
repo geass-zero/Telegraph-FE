@@ -1,1 +1,29 @@
-@import "./../../variables.scss";
+@import './../../variables.scss';
+
+.content_wrap {
+  &.ecosystem_wrap {
+    margin-bottom: 80px;
+    width: 100%;
+
+    .ecosystems_items_wrap {
+      @include flex-row();
+      flex-wrap: wrap;
+      gap: 60px;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-xs) {
+  .ecosystem_wrap {
+    .ecosystems_items_wrap {
+      flex-direction: column;
+      width: 100%;
+
+      .ecosystem_card {
+        min-width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

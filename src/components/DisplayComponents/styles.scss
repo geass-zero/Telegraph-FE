@@ -51,6 +51,62 @@
   }
 }
 
+.ecosystem_card {
+  background: #ffffff;
+  box-shadow: 0px 15px 25px rgba(168, 178, 228, 0.17);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+  z-index: 1;
+  border-right: 2px solid #9faffc;
+  @include flex-column();
+  max-width: 440px;
+  width: 100%;
+  margin-right: 170px;
+  align-items: flex-start;
+  padding-top: 40px;
+  border-right: 0;
+  margin-right: 0;
+  margin-left: 170px;
+  border-left: 2px solid #9faffc;
+  max-width: calc(33.33% - 60px);
+  margin: 0;
+  margin-bottom: 0px;
+  box-shadow: 0px 15px 25px rgba(168, 178, 228, 0.17);
+
+  .text_wrap {
+    @include flex-row();
+    width: 100%;
+    justify-content: flex-start;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    img {
+      margin-right: 10px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .links_wrap {
+    @include flex-row();
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: -8px;
+
+    .link {
+      @include flex-column();
+
+      svg {
+        margin-bottom: 10px;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
 .connection_card {
   box-sizing: border-box;
   background: #ffffff;
