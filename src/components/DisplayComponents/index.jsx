@@ -75,12 +75,12 @@ const EcosystemCard = ({ title, icon }) => {
   );
 };
 
-const SocialCard = ({ color, icon, text }) => {
+const SocialCard = ({ color, icon, text, index }) => {
   return (
     <div
       data-aos='fade-up'
       data-aos-offset='0'
-      data-aos-duration='400'
+      data-aos-duration={index * 100 + 300}
       className={`social_card flex_box space_between align_items ${
         color ? color : 'black'
       }`}>

@@ -106,10 +106,25 @@ const Home = () => {
           </h3>
         </div>
         <div className='social_cards_wrap flex_box'>
-          <SocialCard color='violet' icon={<Discord />} text='Discord' />
-          <SocialCard color='blue' icon={<Telegram />} text='Telegram' />
-          <SocialCard color='blue' icon={<Twitter />} text='Twitter' />
-          <SocialCard color='black' icon={<Github />} text='Github' />
+          <SocialCard
+            index={4}
+            color='violet'
+            icon={<Discord />}
+            text='Discord'
+          />
+          <SocialCard
+            index={1}
+            color='blue'
+            icon={<Telegram />}
+            text='Telegram'
+          />
+          <SocialCard
+            index={2}
+            color='blue'
+            icon={<Twitter />}
+            text='Twitter'
+          />
+          <SocialCard index={6} color='black' icon={<Github />} text='Github' />
         </div>
       </div>
     </section>
