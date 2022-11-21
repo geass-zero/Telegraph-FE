@@ -49,6 +49,21 @@ const PlanCard = ({ isRight, title, description, icon }) => {
   );
 };
 
+const EcosystemCard = ({ title }) => {
+  return (
+    <div
+      className={`plan_card ecosystem_card`}
+      data-aos='fade-up'
+      data-aos-offset='0'
+      data-aos-duration='500'>
+      {/* <div className={`icon_wrap`}>{icon && icon}</div> */}
+      <div className='content'>
+        <div className='title'>{title}</div>
+      </div>
+    </div>
+  );
+};
+
 const SocialCard = ({ color, icon, text }) => {
   return (
     <div
@@ -69,4 +84,4 @@ const SocialCard = ({ color, icon, text }) => {
   );
 };
 
-export { ContentCard, ConnectionCard, PlanCard, SocialCard };
+export { ContentCard, ConnectionCard, PlanCard, SocialCard, EcosystemCard };

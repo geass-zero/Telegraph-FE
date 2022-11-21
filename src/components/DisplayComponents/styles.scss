@@ -15,11 +15,19 @@
   align-items: flex-start;
   padding-top: 40px;
 
-  &.right_aligned {
+  &.right_aligned,
+  &.ecosystem_card {
     border-right: 0;
     margin-right: 0;
     margin-left: 170px;
     border-left: 2px solid #9faffc;
+  }
+
+  &.ecosystem_card {
+    max-width: calc(33.33% - 60px);
+    margin: 0;
+    margin-bottom: 50px;
+    box-shadow: 0px 15px 25px rgba(168, 178, 228, 0.17);
   }
 
   .icon_wrap {

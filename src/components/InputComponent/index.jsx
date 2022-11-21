@@ -2,7 +2,13 @@ import './styles.scss';
 import Select from 'react-select';
 import { ReactComponent as Flag } from './../../assets/svg/usa.svg';
 
-const LanguageDropDown = ({ className, options, label, placeholder }) => {
+const LanguageDropDown = ({
+  className,
+  options,
+  label,
+  placeholder,
+  isSearchable,
+}) => {
   const placeholderText = placeholder
     ? placeholder
     : 'Select ' + (label ? label : '');
@@ -12,7 +18,11 @@ const LanguageDropDown = ({ className, options, label, placeholder }) => {
       <Flag />
       {label && <div className='label'>{label}</div>}
 
-      <Select placeholder={placeholderText} options={options} />
+      <Select
+        placeholder={placeholderText}
+        options={options}
+        isSearchable={isSearchable}
+      />
     </div>
   );
 };
