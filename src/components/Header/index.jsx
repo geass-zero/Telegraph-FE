@@ -74,7 +74,11 @@ const Header = () => {
         </div>
 
         <div className='buttons_wrap'>
-          <LanguageDropDown options={options} placeholder='EN' />
+          <LanguageDropDown
+            options={options}
+            placeholder='EN'
+            isSearchable={false}
+          />
           <button>Start Now</button>
         </div>
 
