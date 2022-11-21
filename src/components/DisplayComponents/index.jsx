@@ -1,5 +1,6 @@
 import './styles.scss';
 import { ReactComponent as Linkicon } from './../../assets/svg/link.svg';
+import { ReactComponent as EcoSystemIcon } from './../../assets/svg/EcosystemDummy.svg';
 
 const ContentCard = ({ title, icon, sub_title, para, index }) => {
   return (
@@ -49,16 +50,26 @@ const PlanCard = ({ isRight, title, description, icon }) => {
   );
 };
 
-const EcosystemCard = ({ title }) => {
+const EcosystemCard = ({ title, icon }) => {
   return (
     <div
-      className={`plan_card ecosystem_card`}
+      className={`ecosystem_card`}
       data-aos='fade-up'
       data-aos-offset='0'
       data-aos-duration='500'>
-      {/* <div className={`icon_wrap`}>{icon && icon}</div> */}
-      <div className='content'>
+      <div className='text_wrap'>
+        <img src={icon} alt='icon' />
         <div className='title'>{title}</div>
+      </div>
+      <div className='links_wrap'>
+        <div className='link'>
+          <EcoSystemIcon />
+          Docs
+        </div>
+        <div className='link'>
+          <EcoSystemIcon />
+          Networks
+        </div>
       </div>
     </div>
   );

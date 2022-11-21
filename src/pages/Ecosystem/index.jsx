@@ -1,5 +1,5 @@
 import './styles.scss';
-import dummyData from '../../json/ecosystem.json';
+import dummyData from '../../json/ecosystem';
 import { EcosystemCard } from '../../components/DisplayComponents';
 
 const Ecosystem = () => {
@@ -14,7 +14,11 @@ const Ecosystem = () => {
       </h1>
       <div className='ecosystems_items_wrap'>
         {dummyData.map((item, index) => (
-          <EcosystemCard title={item?.title || ''} key={index} />
+          <EcosystemCard
+            title={item?.title || ''}
+            icon={item.icon}
+            key={index}
+          />
         ))}
       </div>
     </section>
