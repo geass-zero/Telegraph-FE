@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.45e57faa.css",
-    "main.js": "/static/js/main.db6a2cc2.js",
+    "main.css": "/static/css/main.63b402d2.css",
+    "main.js": "/static/js/main.07cdd12f.js",
     "static/media/Home.jpg": "/static/media/Home.6c4e1d287d1892e5030d.jpg",
+    "static/media/use_case.jpg": "/static/media/use_case.8a6e07ecf852672aacb8.jpg",
     "static/media/telegram.svg": "/static/media/telegram.89335bac198ae3dd60698eb982cc9883.svg",
-    "static/media/microsoft.svg": "/static/media/microsoft.a83e4b074af55d78a93d98edc20f726f.svg",
-    "static/media/adobe.svg": "/static/media/adobe.9b71f9b24eb9d49222289f6fff305bb0.svg",
+    "static/media/versus.svg": "/static/media/versus.46e0f70f9b5aaf30852222cd3e5e3df3.svg",
+    "static/media/hokk.svg": "/static/media/hokk.abfa86cc3dee8d302f8a224b56dfc176.svg",
     "static/media/bio.svg": "/static/media/bio.8948d089cafd4ccc66518186db607d81.svg",
     "static/media/github.svg": "/static/media/github.4c9f04a2438a3dfc8c2efb0726a69598.svg",
-    "static/media/spacex.svg": "/static/media/spacex.825f6845468414247d630b95691e1cb7.svg",
+    "static/media/dropdown.svg": "/static/media/dropdown.c14ea228b4715e5db01d7310246a5ed5.svg",
     "static/media/discord.svg": "/static/media/discord.3ce89fc03dc96c3d602a0af361145b7c.svg",
-    "static/media/tesla.svg": "/static/media/tesla.ebeff53bd3bbc03a124da15d93b88301.svg",
     "static/media/usa.svg": "/static/media/usa.4f25fdeeb1d97aec885ddfa10f083367.svg",
     "static/media/fee.svg": "/static/media/fee.fe1aa5609edada2739f48ad9c6d97501.svg",
     "static/media/twitter.svg": "/static/media/twitter.f0b155ec847b62a33d1c2710004c5ab7.svg",
+    "static/media/EcosystemDummy.svg": "/static/media/EcosystemDummy.d183e205c3ba63a315747646dae967bb.svg",
     "static/media/network.svg": "/static/media/network.d183e205c3ba63a315747646dae967bb.svg",
     "static/media/link.svg": "/static/media/link.e533b23cf937c7e058fdb9219cf3813a.svg",
     "index.html": "/index.html",
-    "main.45e57faa.css.map": "/static/css/main.45e57faa.css.map",
-    "main.db6a2cc2.js.map": "/static/js/main.db6a2cc2.js.map"
+    "main.63b402d2.css.map": "/static/css/main.63b402d2.css.map",
+    "main.07cdd12f.js.map": "/static/js/main.07cdd12f.js.map"
   },
   "entrypoints": [
-    "static/css/main.45e57faa.css",
-    "static/js/main.db6a2cc2.js"
+    "static/css/main.63b402d2.css",
+    "static/js/main.07cdd12f.js"
   ]
 }
