@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.63b402d2.css",
-    "main.js": "/static/js/main.07cdd12f.js",
+    "main.css": "/static/css/main.03320d7e.css",
+    "main.js": "/static/js/main.c739218a.js",
     "static/media/Home.jpg": "/static/media/Home.6c4e1d287d1892e5030d.jpg",
     "static/media/use_case.jpg": "/static/media/use_case.8a6e07ecf852672aacb8.jpg",
     "static/media/telegram.svg": "/static/media/telegram.89335bac198ae3dd60698eb982cc9883.svg",
     "static/media/versus.svg": "/static/media/versus.46e0f70f9b5aaf30852222cd3e5e3df3.svg",
+    "static/media/eth_logo.jpg": "/static/media/eth_logo.506aff67dbbdaba0ffb1.jpg",
+    "static/media/avax_logo.png": "/static/media/avax_logo.95aad093c540e567d41d.png",
+    "static/media/solana_logo.png": "/static/media/solana_logo.40621cec0c4c39fbba45.png",
     "static/media/hokk.svg": "/static/media/hokk.abfa86cc3dee8d302f8a224b56dfc176.svg",
+    "static/media/heco_logo.jpg": "/static/media/heco_logo.9ada76360e51f6b2d43e.jpg",
     "static/media/bio.svg": "/static/media/bio.8948d089cafd4ccc66518186db607d81.svg",
     "static/media/github.svg": "/static/media/github.4c9f04a2438a3dfc8c2efb0726a69598.svg",
     "static/media/dropdown.svg": "/static/media/dropdown.c14ea228b4715e5db01d7310246a5ed5.svg",
@@ -18,11 +22,11 @@
     "static/media/network.svg": "/static/media/network.d183e205c3ba63a315747646dae967bb.svg",
     "static/media/link.svg": "/static/media/link.e533b23cf937c7e058fdb9219cf3813a.svg",
     "index.html": "/index.html",
-    "main.63b402d2.css.map": "/static/css/main.63b402d2.css.map",
-    "main.07cdd12f.js.map": "/static/js/main.07cdd12f.js.map"
+    "main.03320d7e.css.map": "/static/css/main.03320d7e.css.map",
+    "main.c739218a.js.map": "/static/js/main.c739218a.js.map"
   },
   "entrypoints": [
-    "static/css/main.63b402d2.css",
-    "static/js/main.07cdd12f.js"
+    "static/css/main.03320d7e.css",
+    "static/js/main.c739218a.js"
   ]
 }
