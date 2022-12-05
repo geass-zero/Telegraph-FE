@@ -32,8 +32,12 @@ const Home = () => {
               data-aos='fade-up'
               data-aos-offset='0'
               data-aos-duration='550'>
-              <button>Develop With Telegraph</button>
-              <button className='secondary'>Run a Node</button>
+              <a style={{width: '300px'}} href="https://telegraph-1.gitbook.io/what-is-telegraph/examples-and-tutorials/evm-chains" target="_blank">
+                <button>Develop with Telegraph</button>
+              </a>
+              <a href="https://telegraph-1.gitbook.io/what-is-telegraph/node-overview/whats-in-a-node" target="_blank">
+                <button className='secondary'>Run a Node</button>
+              </a>
             </div>
           </div>
           <div className='claim_box_wrap'>
@@ -49,7 +53,7 @@ const Home = () => {
                 data-aos='zoom-in'
                 data-aos-offset='0'
                 data-aos-duration='600'>
-                <button className='colorful'>Claim your NFT</button>
+                <button className='colorful'>Claim your NFT(soon)</button>
               </div>
             </div>
           </div>
@@ -111,18 +115,14 @@ const Home = () => {
             color='violet'
             icon={<Discord />}
             text='Discord'
-          />
-          <SocialCard
-            index={1}
-            color='blue'
-            icon={<Telegram />}
-            text='Telegram'
+            link=''
           />
           <SocialCard
             index={2}
             color='blue'
             icon={<Twitter />}
             text='Twitter'
+            link='twitter.com/telegraphchain'
           />
           <SocialCard index={6} color='black' icon={<Github />} text='Github' />
         </div>

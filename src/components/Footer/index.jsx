@@ -24,15 +24,12 @@ const Footer = () => {
               <div className='text_color font_700_17'>Resources</div>
               <div className='font_500 item'>
                 <div>
-                  <Link to={'#'} className='footer_link'>
-                    Nodes
-                  </Link>
+                  <a className='footer_link' style={{cursor: 'pointer'}}
+                    href='https://telegraph-1.gitbook.io/what-is-telegraph/getting-started/what-is-telegraph' target='_blank'>
+                    Read the Docs
+                  </a>
                 </div>
-                <div>
-                  <Link to={'#'} className='footer_link'>
-                    Community
-                  </Link>
-                </div>
+                
                 <div>
                   <Link to={AppRoute.ECOSYSTEM} className='footer_link'>
                     Ecosystem
@@ -63,11 +60,6 @@ const Footer = () => {
             <div className='help'>
               <div className='text_color font_700_17'>Help</div>
               <div className='font_500 item'>
-                <div>
-                  <Link to={'#'} className='footer_link'>
-                    FAQs
-                  </Link>
-                </div>
                 <div>
                   <Link to={'#'} className='footer_link'>
                     Contact Us
