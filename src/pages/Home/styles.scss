@@ -1,5 +1,6 @@
 @import './../../variables.scss';
 
+
 .home {
   .main_window {
     background-image: url('../../assets/images/Home.jpg');
@@ -60,6 +61,7 @@
 
       .buttons_wrap {
         margin-top: 25px;
+        width: 500px;
 
         button {
           &:first-child {

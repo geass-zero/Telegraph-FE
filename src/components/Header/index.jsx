@@ -79,7 +79,11 @@ const Header = () => {
             placeholder='EN'
             isSearchable={false}
           />
-          <button>Start Now</button>
+          <a 
+            href='https://telegraph-1.gitbook.io/what-is-telegraph/getting-started/what-is-telegraph'
+            target='_blank'>
+            <button className='main_btn'>Get Started</button>
+          </a>
         </div>
 
         <div

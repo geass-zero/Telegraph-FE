@@ -3,11 +3,14 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { githubGist } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import codeStructure from '../../json/codeStructures.json';
 
+import eth from '../../assets/images/eth_logo.jpg';
+
 const CodeViewer = () => {
   const [selectedSnippet, setSnippet] = useState(codeStructure[0]);
 
   return (
     <div className='interoperability_wrap'>
+      
       <div className='content_wrap'>
         <div
           className='sub_head text_center'
@@ -16,7 +19,29 @@ const CodeViewer = () => {
           data-aos-duration='400'>
           Interoperability has never been this easy
         </div>
+        <div className='icon-container' style={{ 
+            display: 'flex', 
+            justifyContent: 'space-around',
+            width: '50%',
+            marginBottom: '15px' }}>
+          <img
+            src={eth}
+            style={{ height: '35px', cursor: 'pointer', borderRadius: '50%' }}
+            onClick={() => setSnippet(codeStructure[0])}
+          />
+          {/* <img
+            src={eth}
+            style={{ height: '35px', cursor: 'pointer', borderRadius: '50%' }}
+            onClick={() => setSnippet(codeStructure[1])}
+          />
+          <img
+            src={eth}
+            style={{ height: '35px', cursor: 'pointer', borderRadius: '50%' }}
+            onClick={() => setSnippet(codeStructure[2])}
+          /> */}
+        </div>
         <div className='detail_wrap'>
+          
           <code
             className='code_box'
             data-aos='fade-right'

@@ -1,9 +1,7 @@
 import { ConnectionCard } from '../../components/DisplayComponents';
 import './styles.scss';
-import { ReactComponent as Tesla } from './../../assets/svg/tesla.svg';
-import { ReactComponent as Spacex } from './../../assets/svg/spacex.svg';
-import { ReactComponent as Adobe } from './../../assets/svg/adobe.svg';
-import { ReactComponent as Microsoft } from './../../assets/svg/microsoft.svg';
+import { ReactComponent as Versus } from './../../assets/svg/versus.svg';
+import { ReactComponent as Hokk } from './../../assets/svg/hokk.svg';
 
 const TeamNPartners = () => {
   return (
@@ -15,7 +13,7 @@ const TeamNPartners = () => {
             data-aos='fade-up'
             data-aos-offset='0'
             data-aos-duration='400'>
-            Team -e- Partners
+            Team -&- Partners
           </h1>
           <div
             className='sub_title text_center'
@@ -42,33 +40,22 @@ const TeamNPartners = () => {
             data-aos='fade-up'
             data-aos-offset='0'
             data-aos-duration='400'>
-            Check out who we have connected with
+            Check out who we've connected with
           </h1>
           <div className='connections_wrap flex_box'>
             <ConnectionCard
               index={1}
               title={'Hokkaido Inu'}
-              image={<Tesla />}
+              image={<Hokk />}
               color='red'
             />
             <ConnectionCard
               index={2}
               title={'Versus Metaverse'}
-              image={<Spacex />}
+              image={<Versus />}
               color='blue'
             />
-            <ConnectionCard
-              index={3}
-              title={'Partner Name'}
-              image={<Adobe />}
-              color='red'
-            />
-            <ConnectionCard
-              index={4}
-              title={'Partner Name'}
-              image={<Microsoft />}
-              color='blue'
-            />
+            
           </div>
         </div>
       </div>

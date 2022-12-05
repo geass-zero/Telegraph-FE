@@ -1,37 +1,53 @@
 import image from './../assets/svg/EcosystemDummy.svg';
+import eth from '../assets/images/eth_logo.jpg';
+import bnb from '../assets/images/bnb_logo.png';
+import heco from '../assets/images/heco_logo.jpg';
+import concordium from '../assets/images/concordium_logo.jpg';
+import aptos from '../assets/images/aptos_logo.png';
+import solana from '../assets/images/solana_logo.png';
+import matic from '../assets/images/matic_logo.png';
+import avalanche from '../assets/images/avax_logo.png';
 
 const dummyData = [
   {
-    icon: image,
-    title: 'Etheruem',
+    icon: eth,
+    title: 'Ethereum',
+    isLive: true
   },
   {
-    icon: image,
+    icon: bnb,
     title: 'Binance Chain',
+    isLive: true
   },
   {
-    icon: image,
+    icon: heco,
     title: 'HECO Chain',
+    isLive: true
   },
   {
-    icon: image,
+    icon: concordium,
     title: 'Concordium',
+    isLive: false
   },
   {
-    icon: image,
+    icon: aptos,
     title: 'Aptos',
+    isLive: false
   },
   {
-    icon: image,
+    icon: solana,
     title: 'Solana',
+    isLive: false
   },
   {
-    icon: image,
+    icon: matic,
     title: 'Matic',
+    isLive: false
   },
   {
-    icon: image,
+    icon: avalanche,
     title: 'Avalanche',
+    isLive: false
   },
 ];
 
