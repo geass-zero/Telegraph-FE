@@ -45,7 +45,7 @@ const TeamNPartners = () => {
           <div className='connections_wrap flex_box'>
             <ConnectionCard
               index={1}
-              title={'Hokkaido Inu'}
+              title={'Hokk Finance'}
               image={<Hokk />}
               color='red'
             />
