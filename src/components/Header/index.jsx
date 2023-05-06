@@ -83,7 +83,7 @@ const Header = () => {
             href='https://telegraph-1.gitbook.io/what-is-telegraph/getting-started/what-is-telegraph'
             target='_blank'
             rel='noreferrer'>
-            <button className='main_btn'>Get Started</button>
+            <button className='main_btn'>Go Cross-Chain</button>
           </a>
         </div>
 
