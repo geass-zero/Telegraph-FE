@@ -288,7 +288,7 @@
   }
 
   .versatile_bridge_wrap {
-    margin-top: 60px;
+    margin-top: 0px;
     padding-bottom: 40px;
 
     .plans_wrap {
@@ -347,10 +347,42 @@
       }
 
       .content_wrap {
-        min-height: auto;
+        min-height: 100vh;
+        flex-wrap: wrap;
 
         .detail_content {
-          min-height: calc(100vh - 270px);
+          min-height: auto;
+          flex-wrap: wrap;
+          width: 100%;
+          align-items: flex-start;
+          padding: 0 10px;
+          padding-top: 40px;
+
+          h1,
+          h2 {
+            max-width: 100%;
+          }
+
+          h1 {
+            font-size: 26px;
+            line-height: 36px;
+          }
+
+          .buttons_wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+
+            button {
+              width: 100%;
+              margin-right: 0 !important;
+              max-width: 100%;
+            }
+            a {
+              width: 100% !important;
+            }
+          }
         }
 
         .claim_box_wrap {
@@ -372,6 +404,8 @@
     }
 
     .interoperability_wrap {
+      margin-top: 0px;
+
       .content_wrap {
         .detail_wrap {
           @include flex-column();
@@ -392,6 +426,60 @@
               margin: 0 5px;
               text-align: center;
             }
+          }
+        }
+      }
+    }
+
+    .basic_information {
+      padding-top: 40px;
+
+      .content_wrap {
+        &.circle_orange:before {
+          width: 350px;
+          height: 350px;
+          bottom: -100px;
+        }
+
+        .text_image_box {
+          padding: 15px;
+          flex-direction: column;
+
+          .details {
+            width: 100%;
+            order: 2;
+
+            p {
+              font-size: 14px;
+              line-height: 20px;
+            }
+
+            button {
+              width: 100%;
+            }
+          }
+
+          .image {
+            order: 1;
+            margin-bottom: 15px;
+            width: 100%;
+
+            img {
+              min-height: 200px;
+            }
+          }
+        }
+      }
+    }
+
+    .mined_tokens {
+      margin-top: 120px;
+
+      .content_wrap {
+        .mined_box {
+          .description {
+            font-size: 14px;
+            line-height: 24px;
           }
         }
       }
