@@ -12,31 +12,36 @@ import CodeViewer from './CodeViewer';
 const Home = () => {
   return (
     <section className='home'>
-      <div
-        className='main_window'
-        data-aos='fade-left'
-        data-aos-offset='0'
-        data-aos-duration='100'>
+      <div className='main_window'>
         <div className='content_wrap'>
           <div className='detail_content'>
-            <h1 data-aos='fade-up' data-aos-offset='0' data-aos-duration='300'>
+            <h1
+              data-aos='fade-up'
+              data-aos-offset='0'
+              data-aos-duration='500'
+              data-aos-delay='400'>
               Communicate with over 10 blockchains with just a few lines of code
             </h1>
-            <h2 data-aos='fade-up' data-aos-offset='0' data-aos-duration='450'>
+            <h2
+              data-aos='fade-up'
+              data-aos-offset='0'
+              data-aos-duration='600'
+              data-aos-delay='400'>
               Telegraph Is a decentralized, lightweight messaging oracle that
-              allows developers to easily access external blockchains from their
-              smart contracts
+              allows developers to make their smart contracts cross-chain
+              interoperable.
             </h2>
             <div
               className='buttons_wrap'
               data-aos='fade-up'
               data-aos-offset='0'
-              data-aos-duration='550'>
+              data-aos-duration='700'
+              data-aos-delay='400'>
               <button>Develop With Telegraph</button>
-              <button className='secondary'>Run a Node</button>
+              <button className='secondary'>ChatGPT Plugin</button>
             </div>
           </div>
-          <div className='claim_box_wrap'>
+          {/* <div className='claim_box_wrap'>
             <div
               className='claim_box_wrap_visible'
               data-aos='fade-up'
@@ -52,7 +57,7 @@ const Home = () => {
                 <button className='colorful'>Claim your NFT</button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <CodeViewer />

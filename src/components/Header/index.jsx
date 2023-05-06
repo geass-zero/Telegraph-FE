@@ -45,7 +45,7 @@ const Header = () => {
           <BannerLink
             onClick={() => setMobMenu(false)}
             link={AppRoute.OVERVIEW}
-            title='Overview'
+            title='Developers'
           />
           <BannerLink
             onClick={() => setMobMenu(false)}
@@ -60,10 +60,10 @@ const Header = () => {
           <BannerLink
             onClick={() => setMobMenu(false)}
             link={AppRoute.TEAM}
-            title='Team & Partners'
+            title='Community'
           />
           <a
-            title='Documentation'
+            title='Resources'
             onClick={() => setMobMenu(false)}
             className={`main_link`}
             target='_blank'
@@ -74,12 +74,12 @@ const Header = () => {
         </div>
 
         <div className='buttons_wrap'>
-          <LanguageDropDown
+          {/* <LanguageDropDown
             options={options}
             placeholder='EN'
             isSearchable={false}
-          />
-          <button>Start Now</button>
+          /> */}
+          <button>Go Cross-Chain</button>
         </div>
 
         <div
