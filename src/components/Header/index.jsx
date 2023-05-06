@@ -79,7 +79,12 @@ const Header = () => {
             placeholder='EN'
             isSearchable={false}
           /> */}
-          <button>Go Cross-Chain</button>
+          <a
+            href='https://telegraph-1.gitbook.io/what-is-telegraph/getting-started/what-is-telegraph'
+            target='_blank'
+            rel='noreferrer'>
+            <button className='main_btn'>Get Started</button>
+          </a>
         </div>
 
         <div

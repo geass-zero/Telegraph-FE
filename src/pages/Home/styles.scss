@@ -1,5 +1,6 @@
 @import './../../variables.scss';
 
+
 .home {
   overflow: hidden;
 
@@ -91,6 +92,7 @@
 
       .buttons_wrap {
         margin-top: 25px;
+        width: 500px;
 
         button {
           &:first-child {

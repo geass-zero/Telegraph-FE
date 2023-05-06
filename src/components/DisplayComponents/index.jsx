@@ -1,6 +1,7 @@
 import './styles.scss';
 import { ReactComponent as Linkicon } from './../../assets/svg/link.svg';
 import { ReactComponent as EcoSystemIcon } from './../../assets/svg/EcosystemDummy.svg';
+import docs from './../../assets/images/docs.png';
 
 const ContentCard = ({ title, icon, sub_title, para, index }) => {
   return (
@@ -50,7 +51,18 @@ const PlanCard = ({ isRight, title, description, icon }) => {
   );
 };
 
-const EcosystemCard = ({ title, icon }) => {
+const EcosystemCard = ({ title, icon, isLive }) => {
+  const liveIndicatorStyle = {
+    background: isLive ? "#00FF00" : "red",
+    borderRadius: "50%",
+    display: "inline-block",
+    marginLeft: "10px",
+    height: "7px",
+    width: "7px",
+    borderRadius: "50%",
+    boxShadow: isLive ? "0 0 1px 1px #00FF00" : "0 0 0 0 red",
+  };
+
   return (
     <div
       className={`ecosystem_card`}
@@ -59,21 +71,21 @@ const EcosystemCard = ({ title, icon }) => {
       data-aos-duration='500'>
       <div className='text_wrap'>
         <img src={icon} alt='icon' />
-        <div className='title'>{title}</div>
+        <div className='title'>
+          {title}
+          <span style={liveIndicatorStyle}></span>
+        </div>
       </div>
       <div className='links_wrap'>
         <div className='link'>
-          <EcoSystemIcon />
+          <img src={docs} style={{ height: '30px', marginTop: '20px', cursor: 'pointer' }} alt='docs' />
           Docs
-        </div>
-        <div className='link'>
-          <EcoSystemIcon />
-          Networks
         </div>
       </div>
     </div>
   );
 };
+
 
 const SocialCard = ({ color, icon, text, index }) => {
   return (
