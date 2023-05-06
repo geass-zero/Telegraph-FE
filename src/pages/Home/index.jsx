@@ -8,6 +8,8 @@ import { ReactComponent as Bio } from './../../assets/svg/bio.svg';
 import { ReactComponent as Fee } from './../../assets/svg/fee.svg';
 import { ReactComponent as Network } from './../../assets/svg/network.svg';
 import CodeViewer from './CodeViewer';
+import MinedTokens from './MinedTokens';
+import BasicInformation from './BasicInformation';
 
 const Home = () => {
   return (
@@ -72,6 +74,8 @@ const Home = () => {
         </div>
       </div>
       <CodeViewer />
+      <BasicInformation />
+      <MinedTokens />
       <div className='versatile_bridge_wrap'>
         <div className='content_wrap'>
           <h1
@@ -127,6 +131,13 @@ const Home = () => {
             color='violet'
             icon={<Discord />}
             text='Discord'
+            link=''
+          />
+          <SocialCard
+            index={4}
+            color='blue'
+            icon={<Telegram />}
+            text='Telegram'
             link=''
           />
           <SocialCard
