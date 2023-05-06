@@ -10,26 +10,28 @@ const CodeViewer = () => {
 
   return (
     <div className='interoperability_wrap'>
-      
       <div className='content_wrap'>
-        <div
-          className='sub_head text_center'
+        <h1
+          className='text_center'
           data-aos='fade-up'
           data-aos-offset='0'
           data-aos-duration='400'>
           Interoperability has never been this easy
-        </div>
-        <div className='icon-container' style={{ 
-            display: 'flex', 
+        </h1>
+        {/* <div
+          className='icon-container'
+          style={{
+            display: 'flex',
             justifyContent: 'space-around',
             width: '50%',
-            marginBottom: '15px' }}>
+            marginBottom: '15px',
+          }}>
           <img
             src={eth}
             style={{ height: '35px', cursor: 'pointer', borderRadius: '50%' }}
             onClick={() => setSnippet(codeStructure[0])}
-          />
-          {/* <img
+          /> */}
+        {/* <img
             src={eth}
             style={{ height: '35px', cursor: 'pointer', borderRadius: '50%' }}
             onClick={() => setSnippet(codeStructure[1])}
@@ -39,9 +41,8 @@ const CodeViewer = () => {
             style={{ height: '35px', cursor: 'pointer', borderRadius: '50%' }}
             onClick={() => setSnippet(codeStructure[2])}
           /> */}
-        </div>
+        {/* </div> */}
         <div className='detail_wrap'>
-          
           <code
             className='code_box'
             data-aos='fade-right'

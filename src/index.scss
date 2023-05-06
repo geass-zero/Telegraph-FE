@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -38,8 +39,8 @@ body {
 
   h1 {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 49px;
+    font-size: 53px;
+    line-height: 65px;
     color: #000000;
     margin: 0;
     margin-bottom: 20px;
@@ -132,7 +133,7 @@ body {
     font-style: normal;
     border: none;
     background: $blue-x1;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 16px 25px;
     color: #ffffff;
     font-weight: 700;

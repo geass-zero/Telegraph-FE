@@ -45,7 +45,7 @@ const Header = () => {
           <BannerLink
             onClick={() => setMobMenu(false)}
             link={AppRoute.OVERVIEW}
-            title='Overview'
+            title='Developers'
           />
           <BannerLink
             onClick={() => setMobMenu(false)}
@@ -60,10 +60,10 @@ const Header = () => {
           <BannerLink
             onClick={() => setMobMenu(false)}
             link={AppRoute.TEAM}
-            title='Team & Partners'
+            title='Community'
           />
           <a
-            title='Documentation'
+            title='Resources'
             onClick={() => setMobMenu(false)}
             className={`main_link`}
             target='_blank'
@@ -74,15 +74,16 @@ const Header = () => {
         </div>
 
         <div className='buttons_wrap'>
-          <LanguageDropDown
+          {/* <LanguageDropDown
             options={options}
             placeholder='EN'
             isSearchable={false}
-          />
-          <a 
+          /> */}
+          <a
             href='https://telegraph-1.gitbook.io/what-is-telegraph/getting-started/what-is-telegraph'
-            target='_blank'>
-            <button className='main_btn'>Get Started</button>
+            target='_blank'
+            rel='noreferrer'>
+            <button className='main_btn'>Go Cross-Chain</button>
           </a>
         </div>
 

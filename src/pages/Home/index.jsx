@@ -8,39 +8,53 @@ import { ReactComponent as Bio } from './../../assets/svg/bio.svg';
 import { ReactComponent as Fee } from './../../assets/svg/fee.svg';
 import { ReactComponent as Network } from './../../assets/svg/network.svg';
 import CodeViewer from './CodeViewer';
+import MinedTokens from './MinedTokens';
+import BasicInformation from './BasicInformation';
 
 const Home = () => {
   return (
     <section className='home'>
-      <div
-        className='main_window'
-        data-aos='fade-left'
-        data-aos-offset='0'
-        data-aos-duration='100'>
+      <div className='main_window'>
         <div className='content_wrap'>
           <div className='detail_content'>
-            <h1 data-aos='fade-up' data-aos-offset='0' data-aos-duration='300'>
+            <h1
+              data-aos='fade-up'
+              data-aos-offset='0'
+              data-aos-duration='500'
+              data-aos-delay='400'>
               Communicate with over 10 blockchains with just a few lines of code
             </h1>
-            <h2 data-aos='fade-up' data-aos-offset='0' data-aos-duration='450'>
+            <h2
+              data-aos='fade-up'
+              data-aos-offset='0'
+              data-aos-duration='600'
+              data-aos-delay='400'>
               Telegraph Is a decentralized, lightweight messaging oracle that
-              allows developers to easily access external blockchains from their
-              smart contracts
+              allows developers to make their smart contracts cross-chain
+              interoperable.
             </h2>
             <div
               className='buttons_wrap'
               data-aos='fade-up'
               data-aos-offset='0'
-              data-aos-duration='550'>
-              <a style={{width: '300px'}} href="https://telegraph-1.gitbook.io/what-is-telegraph/examples-and-tutorials/evm-chains" target="_blank">
+              data-aos-duration='700'
+              data-aos-delay='400'>
+              <a
+                style={{ width: '300px' }}
+                href='https://telegraph-1.gitbook.io/what-is-telegraph/examples-and-tutorials/evm-chains'
+                target='_blank'
+                rel='noreferrer'>
                 <button>Develop with Telegraph</button>
               </a>
-              <a href="https://telegraph-1.gitbook.io/what-is-telegraph/node-overview/whats-in-a-node" target="_blank">
-                <button className='secondary'>Run a Node</button>
+              <a
+                href='https://telegraph-1.gitbook.io/what-is-telegraph/node-overview/whats-in-a-node'
+                target='_blank'
+                rel='noreferrer'>
+                <button className='secondary'>ChatGPT Plugin</button>
               </a>
             </div>
           </div>
-          <div className='claim_box_wrap'>
+          {/* <div className='claim_box_wrap'>
             <div
               className='claim_box_wrap_visible'
               data-aos='fade-up'
@@ -56,10 +70,12 @@ const Home = () => {
                 <button className='colorful'>Claim your NFT(soon)</button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <CodeViewer />
+      <BasicInformation />
+      <MinedTokens />
       <div className='versatile_bridge_wrap'>
         <div className='content_wrap'>
           <h1
@@ -115,6 +131,13 @@ const Home = () => {
             color='violet'
             icon={<Discord />}
             text='Discord'
+            link=''
+          />
+          <SocialCard
+            index={4}
+            color='blue'
+            icon={<Telegram />}
+            text='Telegram'
             link=''
           />
           <SocialCard
