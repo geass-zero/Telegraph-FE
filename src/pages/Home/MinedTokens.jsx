@@ -1,10 +1,26 @@
 const MinedTokens = () => {
   return (
-    <div className='mined_tokens'>
+    <div
+      className='mined_tokens'
+      data-aos='fade-up'
+      data-aos-offset='0'
+      data-aos-duration='400'
+      data-aos-delay='0'>
       <div className='content_wrap'>
         <div className='mined_box'>
-          <h1>MINED TOKENS ONLY</h1>
-          <div className='description'>
+          <h1
+            data-aos='fade-up'
+            data-aos-offset='0'
+            data-aos-duration='400'
+            data-aos-delay='400'>
+            MINED TOKENS ONLY
+          </h1>
+          <div
+            className='description'
+            data-aos='fade-up'
+            data-aos-offset='0'
+            data-aos-duration='600'
+            data-aos-delay='400'>
             <p>
               Telegraph tokens only come into existence as a result of a
               validated transaction, with each node being able to claim a share
