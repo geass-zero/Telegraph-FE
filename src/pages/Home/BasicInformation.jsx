@@ -1,4 +1,5 @@
-import Image from '../../assets/images/Home.jpg';
+import Image from '../../assets/images/robots.png';
+import Image2 from '../../assets/images/knight.png';
 const BasicInformation = () => {
   return (
     <>
@@ -80,7 +81,7 @@ const BasicInformation = () => {
             </div>
             <div className='image'>
               <img
-                src={Image}
+                src={Image2}
                 alt='web'
                 data-aos='fade-right'
                 data-aos-offset='0'
