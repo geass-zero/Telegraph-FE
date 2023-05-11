@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <div className='content_wrap'>
-        <div className='flex_box space_between basic_details'>
+        <div className='flex_box space_between basic_details footer_first-row'>
           <div className='font_700'>Telegraph</div>
           <div className='text_wrap flex_box ready_wrap'>
             <div className='large_text margin_ready'>Ready to get started?</div>

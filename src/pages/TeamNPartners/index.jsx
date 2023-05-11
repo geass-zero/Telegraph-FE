@@ -43,18 +43,35 @@ const TeamNPartners = () => {
             Check out who we've connected with
           </h1>
           <div className='connections_wrap flex_box'>
-            <ConnectionCard
+            <div class="connection_card red aos-init aos-animate" data-aos="fade-up" data-aos-offset="0" data-aos-duration="500">
+              <div class="title">HOKK Finance</div>
+              <div class="image">
+                <a href="https://hokk.finance" target="_blank">
+                  <Hokk />
+                </a>
+              </div>
+            </div>
+            <div class="connection_card red aos-init aos-animate" data-aos="fade-up" data-aos-offset="0" data-aos-duration="500">
+              <div class="title">Versus Metavers</div>
+              <div class="image">
+                <a href="https://versusmetaverse.io/" target="_blank">
+                  <Versus />
+                </a>
+              </div>
+            </div>
+          {/* <ConnectionCard
               index={1}
               title={'HOKK Finance'}
               image={<Hokk />}
               color='red'
+              to="/about"
             />
             <ConnectionCard
               index={2}
               title={'Versus Metaverse'}
               image={<Versus />}
               color='blue'
-            />
+            />*/}
             
           </div>
         </div>

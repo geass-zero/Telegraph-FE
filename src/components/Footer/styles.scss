@@ -120,6 +120,21 @@ footer {
             margin-bottom: 10px;
           }
         }
+        
+      }
+      .basic_details.footer_first-row {
+        display: block;
+        text-align: center;
+        .ready_wrap {
+          flex-direction: column;
+          align-items: center;
+          margin-top: 15px;
+
+          .margin_ready {
+            margin-right: 0;
+            margin-bottom: 10px;
+          }
+        }
       }
 
       .developer {
