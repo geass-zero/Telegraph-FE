@@ -1,7 +1,7 @@
 import { ConnectionCard } from '../../components/DisplayComponents';
 import './styles.scss';
 import { ReactComponent as Versus } from './../../assets/svg/versus.svg';
-import { ReactComponent as Hokk } from './../../assets/svg/hokk.svg';
+import { ReactComponent as Hokk } from './../../assets/svg/Logo-HokkFinance.svg';
 
 const TeamNPartners = () => {
   return (
@@ -45,7 +45,7 @@ const TeamNPartners = () => {
           <div className='connections_wrap flex_box'>
             <ConnectionCard
               index={1}
-              title={'Hokk Finance'}
+              title={'HOKK Finance'}
               image={<Hokk />}
               color='red'
             />
