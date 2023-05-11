@@ -27,7 +27,7 @@ const TeamNPartners = () => {
             data-aos='fade-up'
             data-aos-offset='0'
             data-aos-duration='500'>
-            Telegraph Is an open source, global community dedicated to the
+            Telegraph Is a global community dedicated to the
             proliferation of blockchain technology & inter-chain communication.
             Anyone can contribute.
           </p>

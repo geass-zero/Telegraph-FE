@@ -31,7 +31,7 @@ const MinedTokens = () => {
               tokens across participants within the Telegraph Ecosystem, while
               removing speculation as a driving factor.
             </p>
-            <button>Learn More</button>
+            {/* <button>Learn More</button> */}
           </div>
         </div>
       </div>

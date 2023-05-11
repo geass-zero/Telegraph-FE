@@ -9,7 +9,9 @@ const BasicInformation = () => {
         data-aos-offset='0'
         data-aos-duration='400'
         data-aos-delay='0'>
-        <div className='content_wrap'>
+          {/* set background image inline */}
+        <div className='content_wrap'
+        style={{backgroundImage: `url(${Image})`}}>
           <div className='text_image_box'>
             <div className='details'>
               <h1
@@ -27,13 +29,13 @@ const BasicInformation = () => {
                 Create contracts, Research market trends, and Trade tokens using
                 our ChatGPT integrated cross-chain plugin.
               </p>
-              <button
+              {/* <button
                 data-aos='fade-left'
                 data-aos-offset='0'
                 data-aos-duration='500'
                 data-aos-delay='100'>
                 Try Now
-              </button>
+              </button> */}
             </div>
             <div className='image'>
               <img
@@ -54,7 +56,8 @@ const BasicInformation = () => {
         data-aos-offset='0'
         data-aos-duration='400'
         data-aos-delay='0'>
-        <div className='content_wrap circle_orange'>
+        <div className='content_wrap circle_orange'
+        style={{backgroundImage: `url(${Image2})`}}>
           <div className='text_image_box'>
             <div className='details'>
               <h1
@@ -62,7 +65,7 @@ const BasicInformation = () => {
                 data-aos-offset='0'
                 data-aos-duration='400'
                 data-aos-delay='100'>
-                WEB3 GAME READY
+                READY FOR GAMING
               </h1>
               <p
                 data-aos='fade-left'
@@ -71,13 +74,13 @@ const BasicInformation = () => {
                 data-aos-delay='100'>
                 Make your web3 game cross-chain with no hassle.
               </p>
-              <button
+              {/* <button
                 data-aos='fade-left'
                 data-aos-offset='0'
                 data-aos-duration='500'
                 data-aos-delay='100'>
                 Learn More
-              </button>
+              </button> */}
             </div>
             <div className='image'>
               <img
