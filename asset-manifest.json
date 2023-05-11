@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.e968d75e.css",
-    "main.js": "/static/js/main.78b17230.js",
+    "main.css": "/static/css/main.af667ab2.css",
+    "main.js": "/static/js/main.77f866c8.js",
     "static/media/robots.png": "/static/media/robots.e29a89a3d06b80938dd1.png",
     "static/media/knight.png": "/static/media/knight.6602b8ba392d981bcfa2.png",
     "static/media/use_case_2.png": "/static/media/use_case_2.ea14ee375a9cc5a8cb15.png",
     "static/media/Home.jpg": "/static/media/Home.d24e10d1b224c6fddb30.jpg",
+    "static/media/Logo-HokkFinance.svg": "/static/media/Logo-HokkFinance.4fc1650847f6b0756625a541d7aa44ef.svg",
     "static/media/use_case.jpg": "/static/media/use_case.8a6e07ecf852672aacb8.jpg",
     "static/media/telegram.svg": "/static/media/telegram.89335bac198ae3dd60698eb982cc9883.svg",
     "static/media/versus.svg": "/static/media/versus.53306f6f918e791f9b65369a489ad457.svg",
     "static/media/eth_logo.jpg": "/static/media/eth_logo.506aff67dbbdaba0ffb1.jpg",
     "static/media/avax_logo.png": "/static/media/avax_logo.95aad093c540e567d41d.png",
     "static/media/solana_logo.png": "/static/media/solana_logo.40621cec0c4c39fbba45.png",
-    "static/media/hokk.svg": "/static/media/hokk.dd8c01b6bb19e32be4dacbf3c9043f24.svg",
     "static/media/heco_logo.jpg": "/static/media/heco_logo.9ada76360e51f6b2d43e.jpg",
     "static/media/bio.svg": "/static/media/bio.8948d089cafd4ccc66518186db607d81.svg",
     "static/media/github.svg": "/static/media/github.4c9f04a2438a3dfc8c2efb0726a69598.svg",
@@ -25,11 +25,11 @@
     "static/media/network.svg": "/static/media/network.d183e205c3ba63a315747646dae967bb.svg",
     "static/media/link.svg": "/static/media/link.e533b23cf937c7e058fdb9219cf3813a.svg",
     "index.html": "/index.html",
-    "main.e968d75e.css.map": "/static/css/main.e968d75e.css.map",
-    "main.78b17230.js.map": "/static/js/main.78b17230.js.map"
+    "main.af667ab2.css.map": "/static/css/main.af667ab2.css.map",
+    "main.77f866c8.js.map": "/static/js/main.77f866c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.e968d75e.css",
-    "static/js/main.78b17230.js"
+    "static/css/main.af667ab2.css",
+    "static/js/main.77f866c8.js"
   ]
 }
