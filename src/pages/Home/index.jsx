@@ -46,12 +46,12 @@ const Home = () => {
                 rel='noreferrer'>
                 <button>Develop with Telegraph</button>
               </a>
-              <a
+              {/*<a
                 href='https://telegraph-1.gitbook.io/what-is-telegraph/node-overview/whats-in-a-node'
                 target='_blank'
                 rel='noreferrer'>
                 <button className='secondary'>ChatGPT Plugin</button>
-              </a>
+  </a>*/}
             </div>
           </div>
           {/* <div className='claim_box_wrap'>
