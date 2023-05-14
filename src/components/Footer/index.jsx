@@ -3,13 +3,17 @@ import { Link } from 'react-router-dom';
 import { AppRoute } from '../../utils/constants/ConstantUtil';
 
 const Footer = () => {
+
+  const getYear = () => {
+    return new Date().getFullYear();
+  };
   return (
     <footer>
       <div className='content_wrap'>
         <div className='flex_box space_between basic_details footer_first-row'>
           <div className='font_700'>Telegraph</div>
           <div className='text_wrap flex_box ready_wrap'>
-            <div className='large_text margin_ready'>Ready to get started?</div>
+            <div className='large_text margin_ready'>How will you change the world?</div>
             <button className='button'>Get started</button>
           </div>
         </div>
@@ -69,7 +73,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='copy_right'>© 2022 Telegraph • All Rights Reserved</div>
+        <div className='copy_right'>© {getYear()} Telegraph • All Rights Reserved</div>
       </div>
     </footer>
   );

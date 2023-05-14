@@ -126,28 +126,50 @@ const Home = () => {
           </h3>
         </div>
         <div className='social_cards_wrap flex_box'>
-          <SocialCard
-            index={4}
-            color='violet'
-            icon={<Discord />}
-            text='Discord'
-            link=''
-          />
-          <SocialCard
+          <a
+            href='https://discord.gg/uw8s5u63CF'
+            target='_blank'
+            rel='noreferrer'
+            style={{ width: '100%', textAlign: '-webkit-center'}}
+
+          >
+            <SocialCard
+              index={4}
+              color='violet'
+              icon={<Discord />}
+              text='Discord'
+              link=''
+            />
+          </a>
+          {/* <SocialCard
             index={4}
             color='blue'
             icon={<Telegram />}
             text='Telegram'
             link=''
-          />
-          <SocialCard
-            index={2}
-            color='blue'
-            icon={<Twitter />}
-            text='Twitter'
-            link='twitter.com/telegraphchain'
-          />
-          <SocialCard index={6} color='black' icon={<Github />} text='Github' />
+          /> */}
+          <a
+            href='https://twitter.com/TelegraphBridge'
+            target='_blank'
+            rel='noreferrer'
+            style={{ width: '100%',  textAlign: '-webkit-center'}}
+          >
+            <SocialCard
+              index={2}
+              color='blue'
+              icon={<Twitter />}
+              text='Twitter'
+              link='twitter.com/telegraphchain'
+            />
+          </a>
+          {/* <a
+            href='github.com/telegraphchain'
+            target='_blank'
+            rel='noreferrer'
+            style={{ width: '100%',  textAlign: '-webkit-center'}}
+          >
+            <SocialCard index={6} color='black' icon={<Github />} text='Github' />
+          </a> */}
         </div>
       </div>
     </section>

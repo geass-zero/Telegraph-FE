@@ -25,6 +25,16 @@ const dummyData = [
     isLive: true
   },
   {
+    icon: matic,
+    title: 'Matic',
+    isLive: true
+  },
+  {
+    icon: avalanche,
+    title: 'Avalanche',
+    isLive: true
+  },
+  {
     icon: concordium,
     title: 'Concordium',
     isLive: false
@@ -39,16 +49,7 @@ const dummyData = [
     title: 'Solana',
     isLive: false
   },
-  {
-    icon: matic,
-    title: 'Matic',
-    isLive: false
-  },
-  {
-    icon: avalanche,
-    title: 'Avalanche',
-    isLive: false
-  },
+  
 ];
 
 export default dummyData;
