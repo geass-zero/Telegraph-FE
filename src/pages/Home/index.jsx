@@ -29,7 +29,7 @@ const Home = () => {
               data-aos-offset='0'
               data-aos-duration='600'
               data-aos-delay='400'>
-              Telegraph Is a decentralized, lightweight messaging oracle that
+              Telegraph is a decentralized, lightweight messaging oracle that
               allows developers to make their smart contracts cross-chain
               interoperable.
             </h2>
